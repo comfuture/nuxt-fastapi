@@ -5,13 +5,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "pwa-node",
+      "name": "dev",
+      "command": "npm run dev",
       "request": "launch",
-      "name": "Launch Program",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "program": "npx nuxt"
+      "type": "node-terminal"
     }
   ]
 }
