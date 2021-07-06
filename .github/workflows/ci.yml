@@ -70,7 +70,7 @@ jobs:
 
       - name: Install dependencies
         if: steps.cached-pip-dependencies.outputs.cache-hit != 'true'
-        run: pip install --upgrade --upgrade-strategy eager -r requirements.txt -e .
+        run: pip install --upgrade --upgrade-strategy eager -r requirements.txt
 
       - name: Run pytest
         run: pytest
