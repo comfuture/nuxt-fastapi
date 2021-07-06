@@ -3,11 +3,11 @@
     <header>
       <div class="container">
         <h1>
-          Nuxt Flask
+          Nuxt FastAPI
           <sup><span class="text-yellow-500">Python</span> <span class="text-blue-700">powered</span></sup>
         </h1>
         <p class="description">
-          Webapp template that made with <a href="https://nuxtjs.org/">Nuxt</a> and <a href="https://flask.palletsprojects.com/">flask</a> backend. Out of box, battery included.
+          Webapp template that made with <a href="https://nuxtjs.org/">Nuxt</a> and <a href="https://fastapi.tiangolo.com/">FastAPI</a> backend. Out of box, battery included.
         </p>
         <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
           <a href="#api-proxy-module" class="primary button">Get started</a>

@@ -47,7 +47,7 @@ export default function APIProxyModule(moduleOptions) {
   let backend
 
   this.nuxt.hook('listen', (server, {host, port}) => {
-    backend = spawn('python', ['server.py'], {
+    backend = spawn('uvicorn', ['--port', process.env.PORT || 4000, 'server:app'], {
       env: process.env,
       detached: true,
       stdio: [0, 'pipe', process.stderr]

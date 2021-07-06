@@ -1,6 +1,6 @@
 # nuxt-flask
 
-Webapp template that made with [Nuxt](https://nuxtjs.org/) and [Flask](https://flask.palletsprojects.com/) backend. Out of box, battery included.
+Webapp template that made with [Nuxt](https://nuxtjs.org/) and [FastAPI](https://fastapi.tiangolo.com/) backend. Out of box, battery included.
 
 ```python
 @app.route('/hello')
@@ -15,8 +15,8 @@ def hello():
 </template>
 <script>
 export default {
-  asyncData({app, route:{fullPath}}) {
-    return app.$api(fullPath)
+  asyncData({$api, route:{fullPath}}) {
+    return $api(fullPath)
   }
 }
 </script>
@@ -24,7 +24,7 @@ export default {
 
 ## Getting started
 
-[Getting stared](https://github.com/comfuture/nuxt-flask/blob/main/content/getting-started.md)
+[Getting stared](https://github.com/comfuture/nuxt-fastapi/blob/main/content/getting-started.md)
 
 ## Pre requirements
 
@@ -38,7 +38,7 @@ export default {
 $ npm install
 
 # install python dependencies
-$ poetry install
+$ pip install -r requirements.txt
 
 # serve with hot reload at localhost:3000
 $ npm run dev

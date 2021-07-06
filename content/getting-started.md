@@ -5,17 +5,20 @@ description: Write your server code with flask
 
 ## API Proxy module
 
-Presentation (via Nuxt) and Logic (via Flask) are automacally branched by [content negotiation][Content Negotiation]
+Presentation (via Nuxt) and Logic (via FastAPI) are automacally branched by [content negotiation][Content Negotiation]
 
 > /server.py
 ```python
-@app.route('/hello')
-def hello():
-    name = request.values.get('name', 'World')
-    return jsonify(greet=f'Hello, {name}!')
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get('/hello')
+def hello(name: str = 'World'):
+  return {'greet': f'Hello, {name}'}
 ```
 
-Of course, server-side code can be implemented by [Blueprint] when your application became larger.
+Of course, server-side code can be implemented by [APIRouter] when your application became larger.
 
 > /pages/hello.vue
 ```vue
@@ -24,8 +27,8 @@ Of course, server-side code can be implemented by [Blueprint] when your applicat
 </template>
 <script>
 export default {
-  asyncData({app, route:{fullPath}}) {
-    return app.$api(fullPath)
+  asyncData({$api, route:{fullPath}}) {
+    return $api(fullPath)
   }
 }
 </script>
@@ -56,10 +59,10 @@ After that, in remain navigations through vue-router, `$api()` acts just like a 
 ### Find out more
 
 - [Content Negotiation]
-- [Blueprint]
+- [APIRouter]
 - [nuxt]
 
 
 [Content Negotiation]: https://developer.mozilla.org/ko/docs/Web/HTTP/Content_negotiation
-[Blueprint]: https://flask.palletsprojects.com/en/1.1.x/tutorial/views/
+[APIRouter]: https://fastapi.tiangolo.com/ko/tutorial/bigger-applications/
 [nuxt]: https://nuxtjs.org
