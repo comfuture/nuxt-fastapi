@@ -1,12 +1,15 @@
-# nuxt-flask
+# nuxt-fastapi
 
 Webapp template that made with [Nuxt](https://nuxtjs.org/) and [FastAPI](https://fastapi.tiangolo.com/) backend. Out of box, battery included.
 
 ```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
 @app.route('/hello')
-def hello():
-    name = request.values.get('name', 'World')
-    return jsonify(greet=f'Hello, {name}!')
+def hello(name: str = 'World'):
+    return {'greet': f'Hello, {name}!'}
 ```
 
 ```vue
