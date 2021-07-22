@@ -34,7 +34,7 @@
     "eslint-plugin-vue": "^7.12.1",
     "http-proxy-middleware": "^2.0.1",
     "jest": "^27.0.6",
-    "postcss": "^8.3.5",
+    "postcss": "^8.3.6",
     "vue-jest": "^3.0.4"
   }
 }
