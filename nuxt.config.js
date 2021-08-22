@@ -30,10 +30,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
-    ['~/modules/api-proxy', {
-      backendPort: 4000
-    }]
+    '@nuxtjs/tailwindcss'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -41,7 +38,10 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxt/content',
+    ['~/modules/api-proxy', {
+      backendPort: 4000
+    }]
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
