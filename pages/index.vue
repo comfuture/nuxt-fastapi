@@ -49,26 +49,17 @@ export default {
   header {
     h1 {
       @apply text-4xl leading-none font-extrabold tracking-tight text-gray-900 py-4 mb-8;
-
-      @screen md {
-        @apply py-8 text-6xl;
-      }
+      @apply md:py-8 md:text-6xl;
 
       sup {
         @apply text-sm align-top -ml-24;
-
-        @screen md {
-          @apply text-lg;
-        }
+        @apply md:text-lg;
       }
     }
 
     p.description {
       @apply max-w-screen-lg text-lg text-gray-600 mb-4;
-
-      @screen sm {
-        @apply text-2xl leading-10 mb-10;
-      }
+      @apply sm:text-2xl sm:leading-10 sm:mb-10;
 
       a {
         @apply text-indigo-600 font-bold;
@@ -82,10 +73,7 @@ export default {
 
   .container {
     @apply px-2;
-
-    @screen md {
-      @apply mx-auto px-0;
-    }
+    @apply md:mx-auto md:px-0;
   }
 
   .button {
@@ -103,10 +91,7 @@ export default {
   .nuxt-content-container {
     h2 {
       @apply font-bold mt-4 mb-2 text-lg;
-
-      @screen md {
-        @apply text-xl;
-      }
+      @apply md:text-xl;
     }
 
     h3 {
