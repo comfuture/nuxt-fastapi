@@ -10,7 +10,7 @@ export const meta = {
 }
 
 export default function APIProxyModule(moduleOptions) {
-  const options = Object.assign({}, this.options.apiProxy, moduleOptions)
+  const options = Object.assign({}, moduleOptions, this.options.apiProxy)
 
   const {
     proxyRule = () => false,
