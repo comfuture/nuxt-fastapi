@@ -27,7 +27,7 @@ Of course, server-side code can be implemented by [APIRouter] when your applicat
 </template>
 <script>
 export default {
-  asyncData({$api, route:{fullPath}}) {
+  asyncData({$api, route: {fullPath}}) {
     return $api(fullPath)
   }
 }
@@ -50,7 +50,7 @@ apiProxy: {
 It provides a unified SSR / CSR interface that integrated in the nuxt context.
 
 When page opens on browser at the first, `asyncData()` or `fetch()` method will be called on server-side.
-So that, `ctx.$api()` call that defined within these methods will make a request from nuxt to flask.
+So that, `ctx.$api()` call that defined within these methods will make a request from nuxt to fastapi.
 The `$api()` plugin copies almost all headers that comes from user's request and forward it to Flask, so that stateful informations of individual client request will maintained.
 
 After that, in remain navigations through vue-router, `$api()` acts just like a normal axios function.
