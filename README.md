@@ -47,7 +47,7 @@ $ pip install -r requirements.txt
 $ npm run dev
 ```
 
-API Server that made with flask will be launched automacally.
+API Server that made with fastapi will be launched automacally.
 
 
 ----
