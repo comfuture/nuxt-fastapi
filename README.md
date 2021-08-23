@@ -18,7 +18,7 @@ def hello(name: str = 'World'):
 </template>
 <script>
 export default {
-  asyncData({$api, route:{fullPath}}) {
+  asyncData({$api, route: {fullPath}}) {
     return $api(fullPath)
   }
 }
