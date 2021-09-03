@@ -20,13 +20,16 @@ export default function APIProxyModule(moduleOptions) {
 
   /**
    * negotiates whether flask should process the request or not.
-   * defaults to all requests that accept first to json will proxied to :4000
+   * defaults to all requests that accept first to json and
+   * all methods except GET will proxied to :4000
    * @param {string} pathname
    * @param {import('http').RequestOptions} req
    */
   const negotiate = (pathname, req) => {
     /* eslint: operator-linebrak: 0 */
-    return accepts(req).type(['html', 'json']) === 'json' || proxyRule(pathname, req)
+    return accepts(req).type(['html', 'json']) === 'json'
+      || req.method !== 'GET'
+      || proxyRule(pathname, req)
   }
 
   // provide server middleware
