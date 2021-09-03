@@ -18,7 +18,7 @@ def hello(name: str = 'World'):
 </template>
 <script>
 export default {
-  asyncData({$api, route:{fullPath}}) {
+  asyncData({$api, route: {fullPath}}) {
     return $api(fullPath)
   }
 }
@@ -47,7 +47,7 @@ $ pip install -r requirements.txt
 $ npm run dev
 ```
 
-API Server that made with flask will be launched automacally.
+API Server that made with fastapi will be launched automacally.
 
 
 ----
