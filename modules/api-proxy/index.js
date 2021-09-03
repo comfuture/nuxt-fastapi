@@ -26,7 +26,7 @@ export default function APIProxyModule(moduleOptions) {
    * @param {import('http').RequestOptions} req
    */
   const negotiate = (pathname, req) => {
-    /* eslint: operator-linebrak: 0 */
+    /* eslint: operator-linebreak: 0 */
     return accepts(req).type(['html', 'json']) === 'json'
       || req.method !== 'GET'
       || proxyRule(pathname, req)
