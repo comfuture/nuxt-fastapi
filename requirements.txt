@@ -6,7 +6,7 @@ h11==0.12.0
 httptools==0.3.0
 iniconfig==1.1.1
 packaging==21.0
-pluggy==0.13.1
+pluggy==1.0.0
 py==1.10.0
 pydantic==1.8.2
 pyparsing==2.4.7
