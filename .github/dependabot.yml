@@ -7,6 +7,10 @@ updates:
   labels:
   - security
   - automerge
+  directory: /
+  schedule:
+    interval: daily
+    time: 00:00
 # Fetch and update latest `npm` packages
 - package-ecosystem: npm
   update_types:
@@ -14,6 +18,10 @@ updates:
   - "semver:minor"
   labels:
   - dependency
+  directory: /
+  schedule:
+    interval: daily
+    time: 00:00
   open-pull-requests-limit: 10
   reviewers:
     - comfuture
@@ -30,6 +38,10 @@ updates:
   labels:
   - security
   - automerge
+  directory: /
+  schedule:
+    interval: daily
+    time: 00:00
 # Fetch and update latest `pip` packages
 - package-ecosystem: pip
   update_types:
@@ -37,6 +49,10 @@ updates:
   - "semver:minor"
   labels:
   - dependency
+  directory: /
+  schedule:
+    interval: daily
+    time: 00:00
   open-pull-requests-limit: 10
   reviewers:
     - comfuture
@@ -54,6 +70,10 @@ updates:
   - "semver:patch"
   labels:
   - automerge
+  directory: /
+  schedule:
+    interval: daily
+    time: 00:00
   open-pull-requests-limit: 10
   reviewers:
     - comfuture
