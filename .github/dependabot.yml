@@ -3,21 +3,17 @@ updates:
 # Fetch and automerge patches
 - package-ecosystem: npm
   update_types:
-  - semver:patch
+  - "semver:patch"
   labels:
   - security
   - automerge
 # Fetch and update latest `npm` packages
 - package-ecosystem: npm
   update_types:
-  - semver:major
-  - semver:minor
+  - "semver:major"
+  - "semver:minor"
   labels:
   - dependency
-  directory: '/'
-  schedule:
-    interval: daily
-    time: '00:00'
   open-pull-requests-limit: 10
   reviewers:
     - comfuture
@@ -37,14 +33,10 @@ updates:
 # Fetch and update latest `pip` packages
 - package-ecosystem: pip
   update_types:
-  - semver:major
-  - semver:minor
+  - "semver:major"
+  - "semver:minor"
   labels:
   - dependency
-  directory: '/'
-  schedule:
-    interval: daily
-    time: '00:00'
   open-pull-requests-limit: 10
   reviewers:
     - comfuture
@@ -57,15 +49,11 @@ updates:
 # Fetch and update latest `github-actions` pkgs
 - package-ecosystem: github-actions
   update_types:
-  - semver:major
-  - semver:minor
-  - semver:patch
+  - "semver:major"
+  - "semver:minor"
+  - "semver:patch"
   labels:
   - automerge
-  directory: '/'
-  schedule:
-    interval: daily
-    time: '00:00'
   open-pull-requests-limit: 10
   reviewers:
     - comfuture
