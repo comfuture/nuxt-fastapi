@@ -24,7 +24,8 @@ module.exports = {
     'object-curly-spacing': 0,
     'dot-notation': 0,
     'comma-dangle': ['error', 'never'],
-    'vue/component-definition-name-casing': 0
+    'vue/component-definition-name-casing': 0,
+    'vue/multi-word-component-names': 0
   },
   globals: {
     $nuxt: true
