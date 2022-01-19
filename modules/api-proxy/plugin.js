@@ -22,9 +22,9 @@ export default (ctx, inject) => {
         baseURL: `http://localhost:${port}`,
         headers
       })
-      return http(url, options, method, data).then(r => r.data)
+      return http({ url, options, method, data }).then(r => r.data)
     }
-    return axios(url, options, method, data).then(r => r.data)
+    return axios({ url, options, method, data }).then(r => r.data)
   }
 
   /**
