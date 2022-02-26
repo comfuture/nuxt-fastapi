@@ -5,7 +5,7 @@ certifi==2021.10.8
 charset-normalizer==2.0.6
 click==8.0.4
 fastapi==0.74.1
-h11==0.12.0
+h11==0.13.0
 httptools==0.3.0
 idna==3.3
 iniconfig==1.1.1
