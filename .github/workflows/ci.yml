@@ -17,7 +17,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [12, 14]
+        node: [14, 16]
 
     steps:
       - name: Checkout 🛎
@@ -28,22 +28,19 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
-      - name: Cache node_modules 📦
-        uses: actions/cache@v2
+      - uses: actions/cache@v2
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
       - name: Install dependencies 👨🏻‍💻
-        run: npm ci
+        run: yarn
 
       - name: Run linter 👀
-        run: npm run lint
+        run: yarn lint
 
       - name: Run tests 🧪
-        run: npm run test
+        run: yarn test
 
   pytest:
     runs-on: ${{ matrix.os }}
