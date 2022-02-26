@@ -11,8 +11,8 @@ export default {
       // add nuxt aliases
       'nuxt-link': 'a',
       // @nuxt/image module
-      'nuxt-img': 'img',
-    },
+      'nuxt-img': 'img'
+    }
   },
   purge: {
     content: [
