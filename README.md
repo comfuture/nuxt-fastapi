@@ -38,13 +38,13 @@ export default {
 
 ```bash
 # install npm dependencies
-$ npm install
+$ yarn
 
 # install python dependencies
 $ pip install -r requirements.txt
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+$ yarn dev
 ```
 
 API Server that made with fastapi will be launched automacally.
