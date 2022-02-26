@@ -17,7 +17,7 @@ pyparsing==3.0.6
 pytest==6.2.5
 python-dotenv==0.19.2
 PyYAML==6.0
-requests==2.26.0
+requests==2.27.1
 sniffio==1.2.0
 starlette==0.16.0
 toml==0.10.2
