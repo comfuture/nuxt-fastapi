@@ -25,5 +25,5 @@ typing-extensions==4.1.1
 urllib3==1.26.8
 uvicorn==0.17.6
 uvloop==0.16.0
-watchgod==0.8
+watchgod==0.8.1
 websockets==10.2
