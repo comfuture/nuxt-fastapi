@@ -9,10 +9,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@antfu/utils@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@antfu/utils/-/utils-0.5.0.tgz#b3169429997cb87850e543cb74660f9e2fed7efd"
-  integrity sha512-MrAQ/MrPSxbh1bBrmwJjORfJymw4IqSHFBXqvxaga3ZdDM+/zokYF8DjyJpSjY2QmpmgQrajDUBJOWrYeARfzA==
+"@antfu/utils@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@antfu/utils/-/utils-0.5.1.tgz#7eb6764878adb715daff20019e5a15fd63d93342"
+  integrity sha512-8Afo0+xvYe1K8Wm4xHTymfTkpzy36aaqDvhXIayUwl+mecMG9Xzl3XjXa6swG6Bk8FBeQ646RyvmsYt6+2Be9g==
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"
@@ -2513,26 +2513,26 @@
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
 
-"@windicss/config@1.8.2":
-  version "1.8.2"
-  resolved "https://registry.yarnpkg.com/@windicss/config/-/config-1.8.2.tgz#52f8720a7987184a79d610a151f12a6325c3677e"
-  integrity sha512-dGXkzcH1Bnm9716/pE63YSewLQIZXGWerHEotUKf2EMlz/JqsI9Z3yBy/lXVL9HsEoTNpyvMPLk75oquH0vXGg==
+"@windicss/config@1.8.4":
+  version "1.8.4"
+  resolved "https://registry.yarnpkg.com/@windicss/config/-/config-1.8.4.tgz#090c7f48cb86b6cba1bd97742a2f012852026d3c"
+  integrity sha512-i4fFGFfZoRess6WMkauykHC3PFd9xKYVx7lSuLfMK7sgo6x3+l4dY42GbsWMHyLqH1sTMfyt1LgfXSIKYJozSA==
   dependencies:
-    debug "^4.3.3"
+    debug "^4.3.4"
     jiti "^1.13.0"
     windicss "^3.5.1"
 
-"@windicss/plugin-utils@1.8.2", "@windicss/plugin-utils@^1.1.1", "@windicss/plugin-utils@^1.8.2":
-  version "1.8.2"
-  resolved "https://registry.yarnpkg.com/@windicss/plugin-utils/-/plugin-utils-1.8.2.tgz#f7c982b01d0ea96cf86585115743c770c6b2cd2e"
-  integrity sha512-UlinWxojyGxWV18AyQ1ISeGvtpbw4ITQpcRe0v4PyuJZHwnrrHmxp8o/pg10oEcDKnsTIbjGeZfW5DC+mkjYYQ==
+"@windicss/plugin-utils@1.8.4", "@windicss/plugin-utils@^1.1.1", "@windicss/plugin-utils@^1.8.4":
+  version "1.8.4"
+  resolved "https://registry.yarnpkg.com/@windicss/plugin-utils/-/plugin-utils-1.8.4.tgz#fba74b6eb29276e24b9d09931bc22808fd7230d7"
+  integrity sha512-DqJVwAfzlgd8nYSNlmhXOey32pI8UwH7QiOWdFS/AR2O/q9oLDGHDn97Its/kZdfoyhi8ylwZNP2Pk0H7cihhQ==
   dependencies:
-    "@antfu/utils" "^0.5.0"
-    "@windicss/config" "1.8.2"
-    debug "^4.3.3"
+    "@antfu/utils" "^0.5.1"
+    "@windicss/config" "1.8.4"
+    debug "^4.3.4"
     fast-glob "^3.2.11"
-    magic-string "^0.25.7"
-    micromatch "^4.0.4"
+    magic-string "^0.26.1"
+    micromatch "^4.0.5"
     windicss "^3.5.1"
 
 "@xtuc/ieee754@^1.2.0":
@@ -3180,7 +3180,7 @@ braces@^2.3.1, braces@^2.3.2:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-braces@^3.0.1, braces@~3.0.2:
+braces@^3.0.1, braces@^3.0.2, braces@~3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/braces/-/braces-3.0.2.tgz#3454e1a462ee8d599e236df336cd9ea4f8afe107"
   integrity sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
@@ -3959,6 +3959,11 @@ convert-source-map@^1.4.0, convert-source-map@^1.6.0, convert-source-map@^1.7.0:
   dependencies:
     safe-buffer "~5.1.1"
 
+cookie-es@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/cookie-es/-/cookie-es-0.5.0.tgz#a6ad89923e68c542fc9e760b07aefa5ab020d719"
+  integrity sha512-RyZrFi6PNpBFbIaQjXDlFIhFVqV42QeKSZX1yQIl6ihImq6vcHNGMtqQ/QzY3RMPuYSkvsRwtnt5M9NeYxKt0g==
+
 cookie@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.3.1.tgz#e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb"
@@ -4367,6 +4372,13 @@ debug@^3.2.7:
   dependencies:
     ms "^2.1.1"
 
+debug@^4.3.4:
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
+  integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
+  dependencies:
+    ms "2.1.2"
+
 decimal.js@^10.2.1:
   version "10.3.1"
   resolved "https://registry.yarnpkg.com/decimal.js/-/decimal.js-10.3.1.tgz#d8c3a444a9c6774ba60ca6ad7261c3a94fd5e783"
@@ -4452,6 +4464,11 @@ defu@^5.0.0, defu@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/defu/-/defu-5.0.1.tgz#a034278f9b032bf0845d261aa75e9ad98da878ac"
   integrity sha512-EPS1carKg+dkEVy3qNTqIdp2qV7mUP08nIsupfwQpz++slCVRw7qbQyWvSTig+kFPwz2XXp5/kIIkH+CwrJKkQ==
+
+defu@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/defu/-/defu-6.0.0.tgz#b397a6709a2f3202747a3d9daf9446e41ad0c5fc"
+  integrity sha512-t2MZGLf1V2rV4VBZbWIaXKdX/mUcYW0n2znQZoADBkGGxYL8EWqCuCZBmJPJ/Yy9fofJkyuuSuo5GSwo0XdEgw==
 
 delayed-stream@~1.0.0:
   version "1.0.0"
@@ -5762,10 +5779,15 @@ gzip-size@^6.0.0:
   dependencies:
     duplexer "^0.1.2"
 
-h3@^0.3.9:
-  version "0.3.9"
-  resolved "https://registry.yarnpkg.com/h3/-/h3-0.3.9.tgz#c395f1b6c40eb7664ca264007d5d6dc4b758211e"
-  integrity sha512-C9MbuWVQ88mGb3lmqtp/iqXdALBo34oyjrVT1hx+FYRgcQReNXiKWvzXM6eQdpp4MWQkMGNnp4tlRBT7wsgmmg==
+h3@^0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/h3/-/h3-0.7.3.tgz#e8222bb97a295a621fc7893fda05c47abf60b1c9"
+  integrity sha512-4Gz3vukxfZC53pMDfmzUI7mSb3HUqId6tmnrDGck9HuXQzG09tDWOOigfnIFODZrYmySaCUg7OnNnplrsoogKw==
+  dependencies:
+    cookie-es "^0.5.0"
+    destr "^1.1.0"
+    radix3 "^0.1.1"
+    ufo "^0.7.11"
 
 hable@^3.0.0:
   version "3.0.0"
@@ -7413,14 +7435,14 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
-listhen@^0.2.6:
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/listhen/-/listhen-0.2.6.tgz#1205766d6cf6a4232c0bbb3cbce239dc2ae1a9eb"
-  integrity sha512-/xpN3784qRxyxS9wjiVB0vWE9NqoT+5nvOw5KBRB4tXtsjp7y83CJe6Gi/WtoTkkDqXwhSNStqaJ3r/7J0ZCDA==
+listhen@^0.2.8:
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/listhen/-/listhen-0.2.8.tgz#5934e51fb5088da3ae28ea8a8fd7a6a36a26e777"
+  integrity sha512-qU9Awnit075ZbLKLLVsQSoC95eqd9URWTOosCACM06tZECpp7s8c2rqfJojqfDei88MHJxcFkLALj+M8KzX8Dw==
   dependencies:
     clipboardy "^3.0.0"
     colorette "^2.0.16"
-    defu "^5.0.0"
+    defu "^6.0.0"
     get-port-please "^2.1.0"
     http-shutdown "^1.2.2"
     open "^8.0.5"
@@ -7578,12 +7600,12 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-magic-string@^0.25.7:
-  version "0.25.7"
-  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.25.7.tgz#3f497d6fd34c669c6798dcb821f2ef31f5445051"
-  integrity sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==
+magic-string@^0.26.1:
+  version "0.26.1"
+  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.26.1.tgz#ba9b651354fa9512474199acecf9c6dbe93f97fd"
+  integrity sha512-ndThHmvgtieXe8J/VGPjG+Apu7v7ItcD5mhEIvOscWjPF/ccOiLxHaSuCAS2G+3x4GKsAbT8u7zdyamupui8Tg==
   dependencies:
-    sourcemap-codec "^1.4.4"
+    sourcemap-codec "^1.4.8"
 
 make-dir@^1.0.0:
   version "1.3.0"
@@ -7923,6 +7945,14 @@ micromatch@^4.0.2, micromatch@^4.0.4:
   dependencies:
     braces "^3.0.1"
     picomatch "^2.2.3"
+
+micromatch@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-4.0.5.tgz#bc8999a7cbbf77cdc89f132f6e467051b49090c6"
+  integrity sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==
+  dependencies:
+    braces "^3.0.2"
+    picomatch "^2.3.1"
 
 miller-rabin@^4.0.0:
   version "4.0.1"
@@ -8372,25 +8402,25 @@ num2fraction@^1.2.2:
   resolved "https://registry.yarnpkg.com/num2fraction/-/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
   integrity sha1-b2gragJ6Tp3fpFZM0lidHU5mnt4=
 
-nuxt-windicss@^2.2.8:
-  version "2.2.8"
-  resolved "https://registry.yarnpkg.com/nuxt-windicss/-/nuxt-windicss-2.2.8.tgz#4f3d85757daf00b54262db4334889cd74f52ce19"
-  integrity sha512-l0mONjhsxhkDa/XVLbQZIaA2+xxo+IBCWyieR7vq1Rl4BDRghNXYPMi8H04qwNND8R0cQQNQYUmECxjUg1LlAQ==
+nuxt-windicss@^2.2.11:
+  version "2.2.11"
+  resolved "https://registry.yarnpkg.com/nuxt-windicss/-/nuxt-windicss-2.2.11.tgz#7008ed581a8d268257f908e5d90bd6afac27e47c"
+  integrity sha512-xobq725D6vqpIgYOrLJ6CVlR4xLlFGwuq//gZikXKOdoVRpoK8C+NpHazPd4+f17urGQ4H0LqGBCIujTvV1V0g==
   dependencies:
     "@nuxt/kit" "npm:@nuxt/kit-edge@latest"
-    "@windicss/plugin-utils" "^1.8.2"
+    "@windicss/plugin-utils" "^1.8.4"
     consola "^2.15.3"
-    defu "^5.0.1"
+    defu "^6.0.0"
     fs-extra "^10.0.1"
-    h3 "^0.3.9"
-    listhen "^0.2.6"
+    h3 "^0.7.3"
+    listhen "^0.2.8"
     pathe "^0.2.0"
     read-cache "^1.0.0"
     sirv "^2.0.2"
-    vite-plugin-windicss "^1.8.2"
+    vite-plugin-windicss "^1.8.4"
     windicss "^3.5.1"
     windicss-analysis "^0.3.5"
-    windicss-webpack-plugin "^1.6.7"
+    windicss-webpack-plugin "^1.6.10"
 
 nuxt@^2.15.8:
   version "2.15.8"
@@ -8866,7 +8896,7 @@ picocolors@^1.0.0:
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
   integrity sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==
 
-picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
+picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3, picomatch@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
@@ -9820,6 +9850,11 @@ queue-microtask@^1.2.2:
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
+radix3@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/radix3/-/radix3-0.1.1.tgz#33f783184fc6f2ae2b1d15427ae63c17d44e43cb"
+  integrity sha512-9Np01fn+penHvC05A9EkRpyObPMS0ht3t1UP6KlnQPCfTNzArmEZW/+t2SLsDtPcZyXPDbYCGWA8dSQqWaVwQQ==
+
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5, randombytes@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/randombytes/-/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
@@ -10665,7 +10700,7 @@ source-map@^0.7.3, source-map@~0.7.2:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.7.3.tgz#5302f8169031735226544092e64981f751750383"
   integrity sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==
 
-sourcemap-codec@^1.4.4:
+sourcemap-codec@^1.4.8:
   version "1.4.8"
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
   integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
@@ -11382,7 +11417,7 @@ ua-parser-js@^0.7.28:
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.31.tgz#649a656b191dffab4f21d5e053e27ca17cbff5c6"
   integrity sha512-qLK/Xe9E2uzmYI3qLeOmI0tEOt+TBBQyUIAh4aAgU05FVYzeZrKUdkAZfBNVGRaHVgV0TDkdEngJSw/SyQchkQ==
 
-ufo@^0.7.4, ufo@^0.7.9:
+ufo@^0.7.11, ufo@^0.7.4, ufo@^0.7.9:
   version "0.7.11"
   resolved "https://registry.yarnpkg.com/ufo/-/ufo-0.7.11.tgz#17defad497981290383c5d26357773431fdbadcb"
   integrity sha512-IT3q0lPvtkqQ8toHQN/BkOi4VIqoqheqM1FnkNWT9y0G8B3xJhwnoKBu5OHx8zHDOvveQzfKuFowJ0VSARiIDg==
@@ -11730,13 +11765,13 @@ vfile@^4.0.0:
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
 
-vite-plugin-windicss@^1.8.2:
-  version "1.8.2"
-  resolved "https://registry.yarnpkg.com/vite-plugin-windicss/-/vite-plugin-windicss-1.8.2.tgz#0d07964018d6d0f97bb2a02a452b6bc1e66ba968"
-  integrity sha512-tO9bCoqIW945ehwMr9D41YPods8b7HXtVtYVPx62dxadxlbcoD7PQ/8wSvLEiIkMMfuDG5WQ6LZaUdmfALC/vQ==
+vite-plugin-windicss@^1.8.4:
+  version "1.8.4"
+  resolved "https://registry.yarnpkg.com/vite-plugin-windicss/-/vite-plugin-windicss-1.8.4.tgz#98430706691d54d6b9bf43ac0e3c74dd26b10664"
+  integrity sha512-LSZAO8BZn3x406GRbYX5t5ONXXJVdqiQtN1qrznLA/Dy5/NzZVhfcrL6N1qEYYO7HsCDT4pLAjTzObvDnM9Y8A==
   dependencies:
-    "@windicss/plugin-utils" "1.8.2"
-    debug "^4.3.3"
+    "@windicss/plugin-utils" "1.8.4"
+    debug "^4.3.4"
     kolorist "^1.5.1"
     windicss "^3.5.1"
 
@@ -12095,12 +12130,12 @@ windicss-analysis@^0.3.5:
     fs-extra "^10.0.0"
     sirv "^1.0.12"
 
-windicss-webpack-plugin@^1.6.7:
-  version "1.6.7"
-  resolved "https://registry.yarnpkg.com/windicss-webpack-plugin/-/windicss-webpack-plugin-1.6.7.tgz#274c6ccc0c66e0a55d03a4679dea54b7f08997db"
-  integrity sha512-wMC0+/buGBMqbS6d2jCUGh51J2qSAwIBrwOCmd44GqXTIJs+uNzptYlwijj+V7ykgGn6nmR0fyxH72Ramw2LZA==
+windicss-webpack-plugin@^1.6.10:
+  version "1.6.10"
+  resolved "https://registry.yarnpkg.com/windicss-webpack-plugin/-/windicss-webpack-plugin-1.6.10.tgz#a012796f95430b7a1902dfc34db24430b30fe329"
+  integrity sha512-X/0GbXVoAhML4C8WgKWB/jTJ7ForLFjpwvZ5xAtpQPrVgZdfFH31WVafX+8K+gRBvYpJToHO1TB+oLu6gRFJQA==
   dependencies:
-    "@windicss/plugin-utils" "^1.8.2"
+    "@windicss/plugin-utils" "^1.8.4"
     debug "^4.3.3"
     loader-utils "^2.0.0"
     lodash "^4.17.21"
