@@ -15,7 +15,7 @@ py==1.11.0
 pydantic==1.9.0
 pyparsing==3.0.7
 pytest==7.1.0
-python-dotenv==0.19.2
+python-dotenv==0.20.0
 PyYAML==6.0
 requests==2.27.1
 sniffio==1.2.0
