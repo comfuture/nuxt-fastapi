@@ -13,7 +13,7 @@ packaging==21.3
 pluggy==1.0.0
 py==1.11.0
 pydantic==1.9.0
-pyparsing==3.0.7
+pyparsing==3.0.9
 pytest==7.1.0
 python-dotenv==0.20.0
 PyYAML==6.0
