@@ -1,7 +1,7 @@
 anyio==3.5.0
 asgiref==3.5.2
 attrs==21.4.0
-certifi==2022.5.18.1
+certifi==2022.6.15
 charset-normalizer==2.0.12
 click==8.0.4
 fastapi==0.75.2
@@ -12,7 +12,7 @@ iniconfig==1.1.1
 packaging==21.3
 pluggy==1.0.0
 py==1.11.0
-pydantic==1.9.0
+pydantic==1.9.1
 pyparsing==3.0.9
 pytest==7.1.0
 python-dotenv==0.20.0
