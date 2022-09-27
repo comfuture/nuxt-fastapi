@@ -12,14 +12,14 @@ iniconfig==1.1.1
 packaging==21.3
 pluggy==1.0.0
 py==1.11.0
-pydantic==1.9.1
+pydantic==1.10.2
 pyparsing==3.0.9
 pytest==7.1.0
 python-dotenv==0.20.0
 PyYAML==6.0
 requests==2.27.1
 sniffio==1.2.0
-starlette==0.20.1
+starlette==0.20.4
 toml==0.10.2
 typing-extensions==4.1.1
 urllib3==1.26.12
