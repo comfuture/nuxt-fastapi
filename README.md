@@ -32,24 +32,3 @@ export default {
 ## Pre requirements
 
 - Python 3.x (with virtualenv)
-
-
-## Development
-
-```bash
-# install npm dependencies
-$ yarn
-
-# install python dependencies
-$ pip install -r requirements.txt
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-```
-
-API Server that made with fastapi will be launched automacally.
-
-
-----
-
-Copyright &copy; 2021 comfuture under MIT License

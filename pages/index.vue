@@ -1,3 +1,5 @@
+<script setup lang="ts">
+</script>
 <template>
   <div class="app">
     <header>
@@ -7,7 +9,8 @@
           <sup><span class="text-yellow-500">Python</span> <span class="text-blue-700">powered</span></sup>
         </h1>
         <p class="description">
-          Webapp template that made with <a href="https://nuxtjs.org/">Nuxt</a> and <a href="https://fastapi.tiangolo.com/">FastAPI</a> backend. Out of box, battery included.
+          Webapp template that made with <a href="https://v3.nuxtjs.org/">Nuxt3</a> and <a
+            href="https://fastapi.tiangolo.com/">FastAPI</a> backend. Out of box, battery included.
         </p>
         <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
           <a href="#api-proxy-module" class="primary button">Get started</a>
@@ -16,8 +19,8 @@
       </div>
     </header>
     <section>
-      <div class="container mx-auto py-8">
-        <nuxt-content :document="content" />
+      <div class="docs container mx-auto py-8">
+        <ContentDoc path="/getting-started" />
       </div>
     </section>
     <section class="bg-gray-200">
@@ -27,20 +30,6 @@
     </section>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'index',
-  data() {
-    return {
-      content: ''
-    }
-  },
-  async fetch() {
-    this.content = await this.$content('getting-started').fetch()
-  }
-}
-</script>
 
 <style lang="postcss">
 .app {
@@ -88,10 +77,9 @@ export default {
     }
   }
 
-  .nuxt-content-container {
+  .docs.container {
     h2 {
-      @apply font-bold mt-4 mb-2 text-lg;
-      @apply md:text-xl;
+      @apply font-bold mt-4 mb-2 text-lg md:text-xl;
     }
 
     h3 {
@@ -110,8 +98,11 @@ export default {
       @apply text-gray-700 leading-relaxed mb-2;
     }
 
-    :not(pre) > code {
-      @apply bg-gray-200 border border-gray-400 rounded p-1;
+    pre {
+      @apply rounded-md bg-gray-200;
+      > code {
+        @apply bg-gray-200 border border-gray-400 rounded p-1;
+      }
     }
 
     blockquote {
@@ -120,10 +111,6 @@ export default {
       > p {
         @apply mx-2;
       }
-    }
-
-    .nuxt-content-highlight > pre {
-      @apply rounded-md;
     }
   }
 }
