@@ -3,20 +3,26 @@ title: Getting started
 description: Write your server code with flask
 ---
 
-## API Proxy module
+## FastAPI module
 
 Presentation (via Nuxt) and Logic (via FastAPI) are automacally branched by [content negotiation][Content Negotiation]
 
 > /server.py
 
 ```python
-from fastapi import FastAPI
+from fastapi import FastAPI, Query
+from pydantic import BaseModel
 
 app = FastAPI()
 
-@app.get('/hello')
-def hello(name: str = 'World'):
-  return {'greet': f'Hello, {name}'}
+
+class GreetingResponse(BaseModel):
+    greet: str
+
+
+@app.get('/hello', response_model=GreetingResponse)
+def hello(name: str = Query(..., default='World')):
+    return {'greet': f'Hello, {name}!'}
 ```
 
 Of course, server-side code can be implemented by [APIRouter] when your application became larger.
@@ -24,23 +30,22 @@ Of course, server-side code can be implemented by [APIRouter] when your applicat
 > /pages/hello.vue
 
 ```vue
-<template>
-  <div>{{ greet }}</div>
-</template>
-<script>
-export default {
-  asyncData({$api, route: {fullPath}}) {
-    return $api(fullPath)
-  }
-}
+<script setup lang="ts">
+import type { GreetingResponse } from './server/types' // auto generated
+
+const { fullPath } = useRoute()
+const { data } = useAsyncData<GreetingResponse>(fullPath, () => useAPI(fullPath))
 </script>
+<template>
+  <div>{{ data.greet }}</div>
+</template>
 ```
 
 Defaults to all requests that accept first to json will proxied to backend.
 If you have any other rule to want to be processed by api, define a function `apiProxy.proxyRule` at nuxt config.
 
 ```ts
-apiProxy: {
+fastapi: {
   proxyRule(pathname, req) {
     return req.method !== 'GET' || pathname.endsWith('.do')
   }
