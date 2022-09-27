@@ -1601,15 +1601,7 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@jridgewell/trace-mapping@^0.3.12", "@jridgewell/trace-mapping@^0.3.15":
-  version "0.3.15"
-  resolved "https://registry.yarnpkg.com/@jridgewell/trace-mapping/-/trace-mapping-0.3.15.tgz#aba35c48a38d3fd84b37e66c9c0423f9744f9774"
-  integrity sha512-oWZNOULl+UbhsgB51uuZzglikfIKSUBO/M9W2OfEjn7cmqoAiCgmv9lyACTUacZwBz0ITnJ2NqjU8Tx0DHL88g==
-  dependencies:
-    "@jridgewell/resolve-uri" "^3.0.3"
-    "@jridgewell/sourcemap-codec" "^1.4.10"
-
-"@jridgewell/trace-mapping@^0.3.9":
+"@jridgewell/trace-mapping@^0.3.12", "@jridgewell/trace-mapping@^0.3.15", "@jridgewell/trace-mapping@^0.3.9":
   version "0.3.15"
   resolved "https://registry.yarnpkg.com/@jridgewell/trace-mapping/-/trace-mapping-0.3.15.tgz#aba35c48a38d3fd84b37e66c9c0423f9744f9774"
   integrity sha512-oWZNOULl+UbhsgB51uuZzglikfIKSUBO/M9W2OfEjn7cmqoAiCgmv9lyACTUacZwBz0ITnJ2NqjU8Tx0DHL88g==
@@ -2541,10 +2533,10 @@
   optionalDependencies:
     prettier "^1.18.2 || ^2.0.0"
 
-"@vue/test-utils@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-2.0.0.tgz#06455934091d237d71d81bac6617485de38b1c58"
-  integrity sha512-zL5kygNq7hONrO1CzaUGprEAklAX+pH8J1MPMCU3Rd2xtSYkZ+PmKU3oEDRg8VAGdL5lNJHzDgrud5amFPtirw==
+"@vue/test-utils@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-2.0.2.tgz#0b5edd683366153d5bc5a91edc62f292118710eb"
+  integrity sha512-E2P4oXSaWDqTZNbmKZFVLrNN/siVN78YkEqs7pHryWerrlZR9bBFLWdJwRoguX45Ru6HxIflzKl4vQvwRMwm5g==
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
