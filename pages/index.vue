@@ -9,12 +9,12 @@
           <sup><span class="text-yellow-500">Python</span> <span class="text-blue-700">powered</span></sup>
         </h1>
         <p class="description">
-          Webapp template that made with <a href="https://v3.nuxtjs.org/">Nuxt3</a> and <a
-            href="https://fastapi.tiangolo.com/">FastAPI</a> backend. Out of box, battery included.
+          Webapp template that made with <a href="https://v3.nuxtjs.org/" target="_blank">Nuxt3</a> and <a
+            href="https://fastapi.tiangolo.com/" target="_blank">FastAPI</a> backend. Out of box, battery included.
         </p>
         <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
           <a href="#api-proxy-module" class="primary button">Get started</a>
-          <a href="https://github.com/comfuture/nuxt-flask" class="button">Github</a>
+          <a href="https://github.com/comfuture/nuxt-fastapi" class="button">Github</a>
         </div>
       </div>
     </header>
@@ -47,7 +47,7 @@
     }
 
     p.description {
-      @apply max-w-screen-lg text-lg text-gray-600 mb-4;
+      @apply text-lg text-gray-600 mb-4;
       @apply sm:text-2xl sm:leading-10 sm:mb-10;
 
       a {
@@ -77,6 +77,12 @@
     }
   }
 
+  a[target="_blank"] {
+    &::after {
+      content: '(외부)'
+    }
+  }
+
   .docs.container {
     h2 {
       @apply font-bold mt-4 mb-2 text-lg md:text-xl;
@@ -98,10 +104,18 @@
       @apply text-gray-700 leading-relaxed mb-2;
     }
 
-    pre {
-      @apply rounded-md bg-gray-200;
-      > code {
-        @apply bg-gray-200 border border-gray-400 rounded p-1;
+    pre > code {
+      counter-reset: line-count;
+      @apply block rounded-md bg-gray-800 p-2;
+
+      @screen lg { 
+        > .line {
+          counter-increment: line-count;
+        }
+        > .line::before {
+          @apply inline-block w-10 text-sm text-gray-400;
+          content: counter(line-count) ": ";
+        }
       }
     }
 
@@ -111,6 +125,10 @@
       > p {
         @apply mx-2;
       }
+    }
+
+    code[lang] {
+      @apply rounded-md bg-gray-800 p-1;
     }
   }
 }
