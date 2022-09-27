@@ -30,14 +30,11 @@ jobs:
 
       - uses: actions/cache@v3
         with:
-          path: '**/node_modules'
+          path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
       - name: Install dependencies 👨🏻‍💻
         run: yarn
-
-      - name: Run linter 👀
-        run: yarn lint
 
       - name: Run tests 🧪
         run: yarn test
@@ -48,7 +45,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        python: ['3.8', '3.9']
+        python: ["3.9", "3.10"]
 
     steps:
       - name: Checkout 🛎
