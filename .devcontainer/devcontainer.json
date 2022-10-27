@@ -15,6 +15,7 @@
 	},
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
+		"editor.formatOnSave": true,
 		"python.pythonPath": "/usr/local/bin/python",
 		"python.linting.enabled": true,
 		"python.linting.pylintEnabled": true,
@@ -28,7 +29,6 @@
 		"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
 		"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
     "[css]": {
-        "editor.formatOnSave": true,
         "diffEditor.codeLens": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     }

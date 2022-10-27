@@ -23,6 +23,7 @@
         <ContentDoc path="/getting-started" />
       </div>
     </section>
+    <nuxt-link to="/hello">/hello</nuxt-link>
     <section class="bg-gray-200">
       <div class="container mx-auto py-8">
         <address>Copyright &copy; 2021 comfuture under MIT License</address>

@@ -1,10 +1,10 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-import { getHighlighter } from 'shiki';
 
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '~/modules/fastapi/index.ts'
   ],
   content: {
     highlight: {
