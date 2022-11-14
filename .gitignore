@@ -96,3 +96,6 @@ __pycache__
 
 # ide files
 .vscode/settings.json
+
+# nuxt3 output directory
+.output
