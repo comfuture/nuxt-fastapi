@@ -6603,7 +6603,7 @@ vite-plugin-checker@^0.5.5:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vitest@^0.28:
+vitest@^0.28.5:
   version "0.28.5"
   resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.28.5.tgz#94410a8924cd7189e4f1adffa8c5cde809cbf2f9"
   integrity sha512-pyCQ+wcAOX7mKMcBNkzDwEHRGqQvHUl0XnoHR+3Pb1hytAHISgSxv9h0gUiSiYtISXUU3rMrKiKzFYDrI6ZIHA==
