@@ -11,13 +11,13 @@ on:
       - master
 
 jobs:
-  jest:
+  vitest:
     runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [14, 16]
+        node: [16, 18]
 
     steps:
       - name: Checkout 🛎
