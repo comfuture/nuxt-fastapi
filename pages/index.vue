@@ -1,3 +1,5 @@
+<script setup lang="ts">
+</script>
 <template>
   <div class="app">
     <header>
@@ -7,19 +9,21 @@
           <sup><span class="text-yellow-500">Python</span> <span class="text-blue-700">powered</span></sup>
         </h1>
         <p class="description">
-          Webapp template that made with <a href="https://nuxtjs.org/">Nuxt</a> and <a href="https://fastapi.tiangolo.com/">FastAPI</a> backend. Out of box, battery included.
+          Webapp template that made with <a href="https://v3.nuxtjs.org/" target="_blank">Nuxt3</a> and <a
+            href="https://fastapi.tiangolo.com/" target="_blank">FastAPI</a> backend. Out of box, battery included.
         </p>
         <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
           <a href="#api-proxy-module" class="primary button">Get started</a>
-          <a href="https://github.com/comfuture/nuxt-flask" class="button">Github</a>
+          <a href="https://github.com/comfuture/nuxt-fastapi" class="button">Github</a>
         </div>
       </div>
     </header>
     <section>
-      <div class="container mx-auto py-8">
-        <nuxt-content :document="content" />
+      <div class="docs container mx-auto py-8">
+        <ContentDoc path="/getting-started" />
       </div>
     </section>
+    <nuxt-link to="/hello">/hello</nuxt-link>
     <section class="bg-gray-200">
       <div class="container mx-auto py-8">
         <address>Copyright &copy; 2021 comfuture under MIT License</address>
@@ -27,20 +31,6 @@
     </section>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'index',
-  data() {
-    return {
-      content: ''
-    }
-  },
-  async fetch() {
-    this.content = await this.$content('getting-started').fetch()
-  }
-}
-</script>
 
 <style lang="postcss">
 .app {
@@ -58,7 +48,7 @@ export default {
     }
 
     p.description {
-      @apply max-w-screen-lg text-lg text-gray-600 mb-4;
+      @apply text-lg text-gray-600 mb-4;
       @apply sm:text-2xl sm:leading-10 sm:mb-10;
 
       a {
@@ -88,10 +78,15 @@ export default {
     }
   }
 
-  .nuxt-content-container {
+  a[target="_blank"] {
+    &::after {
+      content: '(외부)'
+    }
+  }
+
+  .docs.container {
     h2 {
-      @apply font-bold mt-4 mb-2 text-lg;
-      @apply md:text-xl;
+      @apply font-bold mt-4 mb-2 text-lg md:text-xl;
     }
 
     h3 {
@@ -110,8 +105,19 @@ export default {
       @apply text-gray-700 leading-relaxed mb-2;
     }
 
-    :not(pre) > code {
-      @apply bg-gray-200 border border-gray-400 rounded p-1;
+    pre > code {
+      counter-reset: line-count;
+      @apply block rounded-md bg-gray-800 p-2;
+
+      @screen lg { 
+        > .line {
+          counter-increment: line-count;
+        }
+        > .line::before {
+          @apply inline-block w-10 text-sm text-gray-400;
+          content: counter(line-count) ": ";
+        }
+      }
     }
 
     blockquote {
@@ -122,8 +128,8 @@ export default {
       }
     }
 
-    .nuxt-content-highlight > pre {
-      @apply rounded-md;
+    code[lang] {
+      @apply rounded-md bg-gray-800 p-1;
     }
   }
 }
