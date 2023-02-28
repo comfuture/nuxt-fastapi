@@ -10,7 +10,7 @@
     "extract-types": "pydantic2ts --module server/model.py --output ./server/types.ts"
   },
   "devDependencies": {
-    "@nuxt/test-utils-edge": "^3.2.3-rc.0-27949872.7479d46",
+    "@nuxt/test-utils-edge": "^3.2.3-rc.0-27958785.503b7ac",
     "@types/accepts": "^1.3.5",
     "accepts": "^1.3.8",
     "json-schema-to-typescript": "^11.0.2",
