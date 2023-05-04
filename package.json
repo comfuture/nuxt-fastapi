@@ -17,7 +17,7 @@
     "json2ts": "^0.0.7",
     "nuxt": "^3.2.2",
     "nuxt-proxy": "^0.4.1",
-    "vitest": "^0.28.5"
+    "vitest": "^0.31.0"
   },
   "dependencies": {
     "-": "^0.0.1",
